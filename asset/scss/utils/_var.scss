@@ -1,0 +1,20 @@
+:root {
+    --white-color: #fafafa;
+    --black-color: #1C1C1C;
+    --bg-color: #fafafa;
+    --scroll-color: #3A3C41;
+    --company-color: rgba(28, 28, 28, 0.5);
+}
+
+.dark {
+    --white-color: #acacac;
+    --black-color: #fafafa;
+    --bg-color: #1C1C1C;
+    --scroll-color: #1C1C1C;
+    --company-color: #acacac;
+}
+
+/*반응형 화면 크기*/
+$desktop: 1200px; //1024
+$tablet: 1023px; // 768
+$mobile: 767px; //320

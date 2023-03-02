@@ -1,0 +1,344 @@
+#footer {
+    margin-top: 100px;
+    padding-top: 80px;
+
+    @include tablet {
+        margin-top: 80px;
+    }
+
+    .company-area {
+        color: var(--company-color);
+
+        .notice-area {
+            margin-bottom: 50px;
+            line-height: 1.2;
+
+            @include mobile {
+                margin-bottom: 20px;
+            }
+
+            .title {
+                display: block;
+                margin-bottom: 20px;
+
+                @include tablet {
+                    font-size: 14px;
+                }
+            }
+
+            .des {
+                font-size: 14px;
+
+                @include mobile {
+                    font-size: 12px;
+                }
+
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    @include tablet {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .menu-group {
+            border-top: 1px solid var(--company-color);
+            padding-top: 50px;
+
+            @include mobile {
+                padding-top: 20px;
+            }
+
+            .menu-title {
+                padding-bottom: 50px;
+                display: flex;
+                gap: 25px;
+                justify-content: flex-start;
+                align-items: center;
+                font-weight: 300;
+
+                @include mobile {
+                    padding-bottom: 20px;
+                }
+
+                a {
+                    display: block;
+                    position: relative;
+
+                    &.apple {
+                        width: 20px;
+                        height: 100%;
+                        color: var(--black-color);
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                            fill: var(--black-color);
+                        }
+
+                        &::after {
+                            margin-top: 18px;
+                        }
+                    }
+
+                    &.retail {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        @include tablet {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        position: absolute;
+                        top: 1px;
+                        right: -27px;
+                        width: 8px;
+                        height: 18px;
+                        background-size: 8px 36px;
+                        background-repeat: no-repeat;
+                        background-image: url(https://www.apple.com/retail/retail-static/assets/static/globalfooter/ko_KR/assets/ac-footer/breadcrumbs/separator/icon_large.svg);
+                        background-position-y: 100%;
+                        vertical-align: middle;
+                        margin-right: 11px;
+                        margin-top: -1px;
+                    }
+                }
+            }
+
+            .menu-area {
+                display: flex;
+
+                @include mobile {
+                    display: block;
+                }
+
+                .menu-wrap {
+                    flex: 25%;
+
+                    @include mobile {
+                        flex-basis: auto;
+                    }
+
+                    .menu-box {
+                        &.menu-box {
+                            margin-top: 24px;
+                        }
+
+                        @include mobile {
+                            position: relative;
+                        }
+                    }
+
+                    h4 {
+                        color: var(--black-color);
+                        font-size: 18px;
+                        line-height: 1.2;
+                        margin-bottom: 20px;
+                        font-weight: 700;
+
+                        @include tablet {
+                            font-weight: 500;
+                            font-size: 16px;
+                        }
+
+                        @include mobile {
+                            font-weight: 400;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            font-size: 16px;
+                            border-bottom: 1px solid #d2d2d7;
+                        }
+                    }
+
+                    .icon-plus {
+                        display: none;
+
+                        @include mobile {
+                            display: block;
+                            position: absolute;
+                            top: 10px;
+                            right: 14px;
+
+                            &.close {
+                                transform: rotate(45deg) scale(1.08);
+                            }
+                        }
+                    }
+
+                    .menu-list {
+                        @include mobile {
+                            display: none;
+
+                            &.block {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .menu-item {
+                        margin-bottom: 15px;
+                        color: var(--company-color);
+                        font-size: 16px;
+                        line-height: 1.2;
+
+                        @include tablet {
+                            font-size: 12px;
+                        }
+
+                        @include mobile {
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+
+        .des-area {
+            margin-top: 80px;
+            font-size: 16px;
+            line-height: 1.2;
+
+            @include tablet {
+                margin-top: 60px;
+                font-size: 14px;
+            }
+
+            @include mobile {
+                margin-top: 40px;
+                font-size: 12px;
+            }
+
+            a {
+                &.color {
+                    color: #06c;
+                    font-weight: 400;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                @include tablet {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .copyright-area {
+        margin-top: 80px;
+        border-top: 1px solid var(--company-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 1.2;
+        color: var(--company-color);
+
+        @include tablet {
+            display: block;
+            font-size: 14px;
+            margin-top: 40px;
+            padding-top: 30px;
+            padding-bottom: 80px;
+        }
+
+        @include mobile {
+            margin-top: 20px;
+            padding-top: 15px;
+            font-size: 14px;
+            padding-bottom: 75px;
+        }
+
+        .copyright {
+            display: block;
+            font-weight: 600;
+
+            @include tablet {
+                font-weight: 500;
+            }
+        }
+
+        .link-list {
+            display: flex;
+            gap: 20px;
+
+            @include tablet {
+                margin: 20px 0;
+            }
+
+            @include mobile {
+                gap: 10px;
+            }
+
+            .link-item {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: -10px;
+                    transform: translateY(-50%);
+                    width: 1px;
+                    height: 20px;
+                    background: rgba(28, 28, 28, 0.5);
+
+                    @include tablet {
+                        height: 16px;
+                    }
+
+                    @include mobile {
+                        right: -5px;
+                        height: 12px;
+                    }
+                }
+
+                &:last-child::after {
+                    content: '';
+                    display: none;
+                }
+
+                a {
+                    display: block;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .lang-area {
+            display: block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            @include tablet {
+                text-decoration: underline;
+            }
+        }
+    }
+}

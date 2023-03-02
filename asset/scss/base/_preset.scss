@@ -1,0 +1,48 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+img {
+    object-fit: cover;
+    vertical-align: top;
+}
+
+body {
+    font-family: 'neuemontreal', 'pretendard';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    background: var(--bg-color);
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 100px;
+    padding-left: 100px;
+
+    @include tablet {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    @include mobile {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
